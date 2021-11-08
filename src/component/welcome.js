@@ -1,11 +1,11 @@
-import React, { component } from "react";
+import React, { Component } from "react";
 
-class welcome extends component{
+class Welcome extends Component{
 
     render(){
-        return <h1>welcome mr user</h1>
+        return <h1>welcome mr {this.props.name} your alias is {this.props.alias}</h1>
     }
 
 }
 
-export default welcome
+export default Welcome

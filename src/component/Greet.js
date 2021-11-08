@@ -1,14 +1,15 @@
-import React from  'react'
+import React from 'react'
 
-/*function Greet(){
-    return  <h1>welcome Nymisha Sankar</h1>
-}
-*/
+/* function Greet(){
+    return  <h1>welcome abdul</h1>
+} */
+
 const Greet = (props) => {
     console.log(props);
+    //props.name = 'dxc'
     return (
         <div>
-            <h1> Hello  {props.name} you are from {props.college}</h1>
+            <h1> hello  {props.name} you are from {props.college}</h1>
             {props.children}
         </div>
     )
