@@ -9,7 +9,7 @@ const Greet = (props) => {
     //props.name = 'dxc'
     return (
         <div>
-            <h1> hello  {props.name} you are from {props.college}</h1>
+            <h1> Hello  {props.name} you are from {props.college}</h1>
             {props.children}
         </div>
     )

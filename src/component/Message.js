@@ -20,7 +20,7 @@ class Message extends Component {
 
     changeMessage(){
         this.setState({    //changing the content of the partition
-            message: 'thank you for subscribing'
+            message: 'Thank you for subscribing'
         })
     }
 
