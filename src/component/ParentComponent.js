@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import ChildComponent from './ChildComponent'
 
-
+/**
+ * this parent component is a stateful/content-partition
+ */
 export class ParentComponent extends Component {
 constructor(props) {
     super(props)
@@ -12,15 +14,16 @@ constructor(props) {
     this.greetParent = this.greetParent.bind(this)
 }
 
-    greetParent(){
+
+    greetParent(childName){
         //alert('hello '+this.state.parentName)
-        alert(`Hello ${this.state.parentName}`) //string templates-- es6
+        alert(`Hello ${this.state.parentName} from  ${childName}`) 
     }
 
     render() {
         return (
             <div>
-                <ChildComponent praneshwarHandler = {this.greetParent}/>   {/*i am passing the reference of greet parent method to the child via a props*/}
+                <ChildComponent NymishaHandler = {this.greetParent}/>   
             </div>
         )
     }
