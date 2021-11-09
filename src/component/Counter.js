@@ -6,16 +6,16 @@ class Counter extends Component {
         super(props)
 
         this.state = {
-            count: 0
+            count: 1
         }
     }
 
     increase() {
-        /*this.setState({
+        this.setState({
             count: this.state.count + 1
 
         })  
-        console.log(this.state.count)*/
+        console.log(this.state.count)
         this.setState((prevState,props) => ({
             count: prevState.count + props.addValue
         }))
