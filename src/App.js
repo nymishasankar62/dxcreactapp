@@ -7,15 +7,16 @@ import Counter from './component/Counter';
 import FunctionClick from './component/FunctionClick';
 import ClassClick from './component/ClassClick';
 import EventBind from './component/EventBind';
+import ParentComponent from './component/ParentComponent';
  
 
 function App() {
   return (
     <div className="App">
+    <ParentComponent/>
     <EventBind/>
-    
+
     </div>
   );
 }
-
 export default App;
