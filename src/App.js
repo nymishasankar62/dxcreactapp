@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
-import Greet from './component/Greet';
-import Welcome from './component/Welcome';
-import Message from './component/Message';
-import Counter from './component/Counter';
-import FunctionClick from './component/FunctionClick';
-import ClassClick from './component/ClassClick';
 import EventBind from './component/EventBind';
 import ParentComponent from './component/ParentComponent';
 import UserGreeting from './component/UserGreeting';
 import NameList from './component/NameList';
 import Table from './component/Table';
+import StyleSheet from './component/StyleSheet';
+import Inline from './component/Inline';
+import './Appstyles.css'
+import styles from './Appstyles.module.css';
 import Stylesheet from './component/StyleSheet';
+
  
 
 function App() {
   return (
     <div className="App">
-    <Stylesheet/>
+    <h1 className = {styles.success}>success</h1>
+    <h1 className = 'error'>error</h1>
+
+    <Inline/>
+    <StyleSheet  enabled = {true}/>
     <Table/>
     <NameList/>
     <UserGreeting/>
@@ -30,3 +32,4 @@ function App() {
 }
 
 export default App;
+ 

@@ -1,10 +1,13 @@
 import React from 'react'
-import './mystyle.css'
+import './mystyles.css'
 
-function Stylesheet() {
+function Stylesheet(props) {
+    //literal-$, template --{} and attribute-name
+
+    let className = props.enabled ? 'primary' : ''
     return (
         <div>
-            <h1 className = 'primary'> welcome to style sheets</h1>
+            <h1 className = {`${className} font-xl`}> welcome to style sheets</h1>
         </div>
     )
 }
