@@ -7,7 +7,7 @@ import Table from './component/Table';
 import StyleSheet from './component/StyleSheet';
 import Inline from './component/Inline';
 import './Appstyles.css'
-import styles from './Appstyles.module.css';
+import Styles from './Appstyles.module.css';
 import Stylesheet from './component/StyleSheet';
 
  
@@ -15,7 +15,7 @@ import Stylesheet from './component/StyleSheet';
 function App() {
   return (
     <div className="App">
-    <h1 className = {styles.success}>success</h1>
+    <h1 className = {Styles.success}>success</h1>
     <h1 className = 'error'>error</h1>
 
     <Inline/>
